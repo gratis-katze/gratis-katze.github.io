@@ -1,101 +1,95 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Felixのホームページ</title>
-  <meta name="description" content="Felixの個人サイト。自己紹介とミニゲーム。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <title>Felix's Homepage</title>
+  <meta name="description" content="Felix's personal homepage: about me and small browser games.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="wrap">
 
-  <header class="top">
-    <h1>☆Felixのホームページ☆</h1>
-    <p>ようこそ！ Willkommen auf meiner Homepage!</p>
-  </header>
-  <div class="marquee" aria-hidden="true"><span>♪ ご来訪ありがとうございます ♪ ミニゲームを準備中です！ お楽しみに ♪ リンクフリーです ♪</span></div>
-
-  <div class="cols">
-    <nav class="side" aria-label="メニュー">
-      <h2>MENU</h2>
-      <ul>
-        <li><a href="#top">トップ</a></li>
-        <li><a href="#log">更新履歴</a></li>
-        <li><a href="#profile">自己紹介</a></li>
-        <li><a href="#games">ゲーム</a></li>
-        <li><a href="#contact">連絡先</a></li>
-        <li><a href="#links">リンク</a></li>
-      </ul>
-
-      <div class="counter">
-        あなたは<br>
-        <span class="digits" id="counter">000000</span><br>
-        人目の訪問者です
-        <div class="small">(このブラウザの来訪回数)</div>
-      </div>
-
-      <div class="banners">
-        <a class="b88 a" href="#top">FELIX</a>
-        <a class="b88 b" href="#games">GAME</a>
-      </div>
-    </nav>
-
-    <main id="top">
-      <section class="box" id="log">
-        <h2>更新履歴</h2>
-        <table class="log">
-          <tr><td id="today">2026/11/04</td><td>サイトをリニューアルしました！ <span class="new">NEW!</span></td></tr>
-          <tr><td>2026/11/04</td><td>ホームページを作りました。</td></tr>
-        </table>
-      </section>
-
-      <hr class="rainbow">
-
-      <section class="box" id="profile">
-        <h2>自己紹介</h2>
-        <p>こんにちは、Felixです。ソフトウェアを作っています。<br>
-        Hallo, ich bin Felix und entwickle Software. Hier sammle ich alles, was mir Spaß macht.</p>
-        <table class="profile">
-          <tr><th>名前</th><td>Felix</td></tr>
-          <tr><th>職業</th><td>ソフトウェアエンジニア</td></tr>
-          <tr><th>趣味</th><td>日本、ゲーム、プログラミング</td></tr>
-          <tr><th>住所</th><td>ドイツ</td></tr>
-        </table>
-      </section>
-
-      <hr class="rainbow">
-
-      <section class="box" id="games">
-        <h2>ゲームコーナー</h2>
-        <p>ブラウザで遊べるミニゲームを置く予定です。</p>
-        <ul>
-          <li><a href="games/">テストゲーム</a> (準備中)</li>
-          <li>次のゲーム (制作中...)</li>
-        </ul>
-      </section>
-
-      <hr class="rainbow">
-
-      <section class="box" id="contact">
-        <h2>連絡先</h2>
-        <p>メールはこちら: <a href="mailto:felixalexander.ruff@googlemail.com">felixalexander.ruff@googlemail.com</a></p>
-      </section>
-
-      <section class="box" id="links">
-        <h2>リンク</h2>
-        <p>当サイトはリンクフリーです。バナーはお好きにどうぞ。<br>
-        <a href="https://github.com/gratis-katze">GitHub</a></p>
-      </section>
-    </main>
+  <div class="title">
+    <h1>~*~ Felix's Homepage ~*~</h1>
+    <p>ようこそ! Welcome to my little corner of the web.</p>
   </div>
 
+  <div class="marquee" aria-hidden="true"><span>*** Welcome, traveler! *** Mini games coming soon! *** Please sign my guestbook! ***</span></div>
+
+  <table class="layout">
+    <tr>
+      <td class="menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#news">What's new</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+
+        <a class="btn" href="games/">Play Games</a>
+        <a class="btn" href="mailto:felixalexander.ruff@googlemail.com">E-Mail me</a>
+
+        <div class="counter">
+          You are visitor<br>
+          <span class="digits" id="counter">000001</span><br>
+          <span class="small">(counted in your browser)</span>
+        </div>
+
+        <div class="badges">
+          <span class="badge">Best viewed in<br>800x600</span><br>
+          <span class="badge">Made with<br>Notepad</span>
+        </div>
+      </td>
+
+      <td class="content" id="top">
+        <div class="construction"><span>*** UNDER CONSTRUCTION ***</span></div>
+
+        <h2 class="section" id="news">What's new <span class="blink">NEW!</span></h2>
+        <ul>
+          <li><b id="today">11/04/2026</b> &ndash; Homepage went online! More coming soon.</li>
+        </ul>
+
+        <hr>
+
+        <h2 class="section" id="about">About me</h2>
+        <p>Hi, I'm Felix. I build software and I like making small things that are fun. This is my personal homepage, where I will collect everything I like.</p>
+        <table class="data">
+          <tr><th>Name</th><td>Felix</td></tr>
+          <tr><th>Job</th><td>Software engineer</td></tr>
+          <tr><th>Likes</th><td>Japan, games, programming</td></tr>
+          <tr><th>Location</th><td>Germany</td></tr>
+        </table>
+
+        <hr>
+
+        <h2 class="section" id="games">Game corner</h2>
+        <p>I am planning to host small browser games here. Nothing to play yet &ndash; check back soon!</p>
+        <ul>
+          <li><a href="games/">Test game</a> (coming soon)</li>
+          <li>Next game (in progress...)</li>
+        </ul>
+
+        <hr>
+
+        <h2 class="section" id="contact">Contact</h2>
+        <p>E-mail: <a href="mailto:felixalexander.ruff@googlemail.com">felixalexander.ruff@googlemail.com</a></p>
+
+        <h2 class="section" id="links">Links</h2>
+        <ul>
+          <li><a href="https://github.com/gratis-katze">My GitHub</a></li>
+        </ul>
+        <p class="small">Feel free to link to this page!</p>
+      </td>
+    </tr>
+  </table>
+
   <footer>
-    Copyright © 2026 Felix All Rights Reserved.<br>
-    <a href="#top">▲ ページの先頭へ</a>
+    &copy; 2026 Felix. All rights reserved.<br>
+    <a href="#top">[ Back to top ]</a>
   </footer>
 </div>
 <script src="js/main.js"></script>
