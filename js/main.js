@@ -1,16 +1,11 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Navigation: aktuellen Abschnitt markieren
-const links = [...document.querySelectorAll(".rail ul a")];
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((e) => {
-    if (!e.isIntersecting) return;
-    links.forEach((a) =>
-      a.toggleAttribute("aria-current", a.hash === "#" + e.target.id)
-    );
-    links.forEach((a) => {
-      if (a.getAttribute("aria-current") !== null) a.setAttribute("aria-current", "true");
-    });
-  });
-}, { rootMargin: "-40% 0px -55% 0px" });
-document.querySelectorAll("section.block").forEach((s) => observer.observe(s));
+// Besucherzähler: zählt nur Besuche in diesem Browser (kein Server nötig).
+(function () {
+  const el = document.getElementById("counter");
+  if (!el) return;
+  let n = 1;
+  try {
+    n = (parseInt(localStorage.getItem("visits"), 10) || 0) + 1;
+    localStorage.setItem("visits", n);
+  } catch (e) {}
+  el.textContent = String(n).padStart(6, "0");
+})();
