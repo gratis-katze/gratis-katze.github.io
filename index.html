@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felix – Persönliche Website</title>
+  <meta name="description" content="Persönliche Website von Felix: Über mich, kleine Spiele und Kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700;800&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="rail" aria-label="Hauptnavigation">
+    <a class="hanko" href="#top" aria-label="Zum Anfang">風</a>
+    <ul>
+      <li><a href="#about">私について</a></li>
+      <li><a href="#games">遊び</a></li>
+      <li><a href="#contact">連絡</a></li>
+    </ul>
+    <span></span>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <p class="sub">プログラムと、小さな遊びの場所。</p>
+      <h1>フェリックスの<br>ホームページ</h1>
+      <p class="roman">FELIX – HOMEPAGE</p>
+    </header>
+
+    <section class="block" id="about">
+      <h2>私について<small>Über mich</small></h2>
+      <div>
+        <p>Hallo, ich bin Felix. Ich entwickle Software und baue in meiner Freizeit kleine Dinge, die Spaß machen.</p>
+        <p>Diese Seite ist mein ruhiger Ort im Netz: wenig Text, viel Platz. Hier wird nach und nach alles entstehen, was ich selbst gern benutze.</p>
+        <dl class="facts">
+          <dt>Beruf</dt><dd>Software Engineer</dd>
+          <dt>Interessen</dt><dd>Japan, Spiele, Programmieren</dd>
+          <dt>Ort</dt><dd>Deutschland</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="block" id="games">
+      <h2>遊び<small>Spiele</small></h2>
+      <div>
+        <p>Hier landen meine Minispiele. Sie laufen direkt im Browser.</p>
+        <ul class="games">
+          <li><a href="games/">
+            <span class="kanji">試</span><span>Testspiel</span><span class="tag">bald</span>
+          </a></li>
+          <li><span class="soon">
+            <span class="kanji">次</span><span>Das nächste Spiel</span><span class="tag">in Arbeit</span>
+          </span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="contact">
+      <h2>連絡<small>Kontakt</small></h2>
+      <div>
+        <p>Schreib mir gern eine Nachricht.</p>
+        <p><a href="mailto:felixalexander.ruff@googlemail.com">felixalexander.ruff@googlemail.com</a></p>
+      </div>
+    </section>
+
+    <footer>© <span id="year">2026</span> Felix</footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
