@@ -3,95 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Felix's Homepage</title>
-  <meta name="description" content="Felix's personal homepage: about me and small browser games.">
+  <title>Felix</title>
+  <meta name="description" content="Felix's personal website: about me, small browser games and contact.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="wrap">
+  <div class="page">
+    <header>
+      <h1>Felix</h1>
+      <p class="tagline">Software engineer. I build software and small games.</p>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <div class="title">
-    <h1>~*~ Felix's Homepage ~*~</h1>
-    <p>ようこそ! Welcome to my little corner of the web.</p>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>Hi, I'm Felix. I work as a software engineer in Germany. In my free time I build small things that are fun to use.</p>
+        <p>This is my personal website. More will show up here over time.</p>
+      </section>
+
+      <section id="games">
+        <h2>Games</h2>
+        <p>Small games that run right in your browser. The first ones are on their way.</p>
+        <ul class="list">
+          <li><a href="games/">All games</a><span class="meta">coming soon</span></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:felixalexander.ruff@googlemail.com">felixalexander.ruff@googlemail.com</a></p>
+        <p><a href="https://github.com/gratis-katze">GitHub</a></p>
+      </section>
+    </main>
+
+    <footer>&copy; <span id="year">2026</span> Felix</footer>
   </div>
-
-  <div class="marquee" aria-hidden="true"><span>*** Welcome, traveler! *** Mini games coming soon! *** Please sign my guestbook! ***</span></div>
-
-  <table class="layout">
-    <tr>
-      <td class="menu">
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#news">What's new</a></li>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#links">Links</a></li>
-        </ul>
-
-        <a class="btn" href="games/">Play Games</a>
-        <a class="btn" href="mailto:felixalexander.ruff@googlemail.com">E-Mail me</a>
-
-        <div class="counter">
-          You are visitor<br>
-          <span class="digits" id="counter">000001</span><br>
-          <span class="small">(counted in your browser)</span>
-        </div>
-
-        <div class="badges">
-          <span class="badge">Best viewed in<br>800x600</span><br>
-          <span class="badge">Made with<br>Notepad</span>
-        </div>
-      </td>
-
-      <td class="content" id="top">
-        <div class="construction"><span>*** UNDER CONSTRUCTION ***</span></div>
-
-        <h2 class="section" id="news">What's new <span class="blink">NEW!</span></h2>
-        <ul>
-          <li><b id="today">11/04/2026</b> &ndash; Homepage went online! More coming soon.</li>
-        </ul>
-
-        <hr>
-
-        <h2 class="section" id="about">About me</h2>
-        <p>Hi, I'm Felix. I build software and I like making small things that are fun. This is my personal homepage, where I will collect everything I like.</p>
-        <table class="data">
-          <tr><th>Name</th><td>Felix</td></tr>
-          <tr><th>Job</th><td>Software engineer</td></tr>
-          <tr><th>Likes</th><td>Japan, games, programming</td></tr>
-          <tr><th>Location</th><td>Germany</td></tr>
-        </table>
-
-        <hr>
-
-        <h2 class="section" id="games">Game corner</h2>
-        <p>I am planning to host small browser games here. Nothing to play yet &ndash; check back soon!</p>
-        <ul>
-          <li><a href="games/">Test game</a> (coming soon)</li>
-          <li>Next game (in progress...)</li>
-        </ul>
-
-        <hr>
-
-        <h2 class="section" id="contact">Contact</h2>
-        <p>E-mail: <a href="mailto:felixalexander.ruff@googlemail.com">felixalexander.ruff@googlemail.com</a></p>
-
-        <h2 class="section" id="links">Links</h2>
-        <ul>
-          <li><a href="https://github.com/gratis-katze">My GitHub</a></li>
-        </ul>
-        <p class="small">Feel free to link to this page!</p>
-      </td>
-    </tr>
-  </table>
-
-  <footer>
-    &copy; 2026 Felix. All rights reserved.<br>
-    <a href="#top">[ Back to top ]</a>
-  </footer>
-</div>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
